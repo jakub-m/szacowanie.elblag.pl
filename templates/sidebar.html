@@ -3,7 +3,7 @@
 <div id="nav">
   <ul>
     {% for item in sidebar_items %}
-    <li><a href="{{ item.path }}" class="{{ item.a_class }}">{{ item.a_name }}</a></li>
+    <li><a href="{{ item.abs_path }}" class="{{ item.a_class }}">{{ item.a_name }}</a></li>
     {% endfor %}
   </ul>
 </div>
