@@ -6,7 +6,7 @@ from jinja2 import select_autoescape
 import os.path
 
 
-HOME_URL='http://szacowanie.elblag.pl'
+HOME_URL='https://jakub-m.github.io/szacowanie.elblag.pl/'
 
 
 def main():
