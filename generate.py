@@ -6,7 +6,7 @@ from jinja2 import select_autoescape
 import os.path
 
 
-HOME_URL='https://jakub-m.github.io/szacowanie.elblag.pl/'
+HOME_URL='https://jakub-m.github.io/szacowanie.elblag.pl'
 
 
 def main():
@@ -36,7 +36,7 @@ def main():
     for page in pages:
         output_path = os.path.join('docs', page['file_name'])
         sidebar_items = [{
-                            'path': '/' + p['file_name'],
+                            'abs_path': HOME_URL + '/' + p['file_name'],
                             'a_class': 'current' if p['file_name'] == page['file_name'] else '',
                             'a_name': p['name']
                            } for p in pages]
